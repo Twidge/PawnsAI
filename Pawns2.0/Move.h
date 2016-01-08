@@ -3,36 +3,36 @@
 
 #include "Piece.h"
 
+const unsigned int G_BOARD_SIZE = 8;
+
 class Move
 {
 private :
 
-	Square from;
-	Square to;
-	bool isWhite;
-	double coefficients[8][8];
+	Square m_from;
+	Square m_to;
+	bool m_isWhite;
+	double m_coefficients[G_BOARD_SIZE][G_BOARD_SIZE];
 
 public :
 
-	// Constructors, assignment operator
-	Move(const Square&, const Square&, bool);
+	// CONSTRUCTORS
 	Move();
+	Move(const Square&, const Square&, bool);
 	Move(const Move&);
-	~Move();
-	const Move& operator=(const Move&);
 
-	// Friends
-
-	friend ostream& operator<< (ostream&, const Move&);
-
-	// Getters
+	// GETTERS
 	const Square& GetFrom() const;
 	const Square& GetTo() const;
 	bool IsWhite() const;
 	double GetCoefficient(int, int) const;
 
-	// Add an amount to a coefficient (since we never actually set it)
+	// METHODS
 	void AddToCoefficient(int, int, double);
+
+	// OPERATOR OVERLOADS
+	const Move& operator=(const Move&);
+	friend ostream& operator<< (ostream&, const Move&);
 };
 
 #endif

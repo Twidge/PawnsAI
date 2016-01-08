@@ -1,35 +1,20 @@
-﻿Build started 23/09/2015 00:44:52.
-     1>Project "C:\Users\Matthew\documents\visual studio 2013\Projects\Pawns2.0\Pawns2.0\Pawns2.0.vcxproj" on node 2 (Build target(s)).
+﻿Build started 08/01/2016 16:50:16.
+     1>Project "C:\Users\Matthew\Documents\GitHub\PawnsAI\Pawns2.0\Pawns2.0.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Board.cpp Move.cpp Pawns2.0.cpp
-         Pawns2.0.cpp
-     1>c:\users\matthew\documents\visual studio 2013\projects\pawns2.0\pawns2.0\pawns2.0.cpp(53): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
-     1>c:\users\matthew\documents\visual studio 2013\projects\pawns2.0\pawns2.0\pawns2.0.cpp(83): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\matthew\documents\visual studio 2013\projects\pawns2.0\pawns2.0\pawns2.0.cpp(178): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\matthew\documents\visual studio 2013\projects\pawns2.0\pawns2.0\pawns2.0.cpp(263): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\matthew\documents\visual studio 2013\projects\pawns2.0\pawns2.0\pawns2.0.cpp(323): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\matthew\documents\visual studio 2013\projects\pawns2.0\pawns2.0\pawns2.0.cpp(353): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\matthew\documents\visual studio 2013\projects\pawns2.0\pawns2.0\pawns2.0.cpp(390): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\matthew\documents\visual studio 2013\projects\pawns2.0\pawns2.0\pawns2.0.cpp(461): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\matthew\documents\visual studio 2013\projects\pawns2.0\pawns2.0\pawns2.0.cpp(467): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\matthew\documents\visual studio 2013\projects\pawns2.0\pawns2.0\pawns2.0.cpp(484): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\matthew\documents\visual studio 2013\projects\pawns2.0\pawns2.0\pawns2.0.cpp(504): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\matthew\documents\visual studio 2013\projects\pawns2.0\pawns2.0\pawns2.0.cpp(521): warning C4018: '<' : signed/unsigned mismatch
-         Board.cpp
-         Generating Code...
-     1>c:\users\matthew\documents\visual studio 2013\projects\pawns2.0\pawns2.0\board.cpp(307): warning C4715: 'Board::IsMoveValid' : not all control paths return a value
-         Skipping... (no relevant changes detected)
-         Move.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Player.cpp
+         Player.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Matthew\documents\visual studio 2013\Projects\Pawns2.0\Debug\Pawns2.0.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Matthew\documents\visual studio 2013\Projects\Pawns2.0\Debug\Pawns2.0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Matthew\documents\visual studio 2013\Projects\Pawns2.0\Debug\Pawns2.0.lib" /MACHINE:X86 Debug\Board.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Matthew\Documents\GitHub\PawnsAI\Debug\Pawns2.0.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Matthew\Documents\GitHub\PawnsAI\Debug\Pawns2.0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Matthew\Documents\GitHub\PawnsAI\Debug\Pawns2.0.lib" /MACHINE:X86 Debug\Board.obj
+         Debug\GameController.obj
          Debug\Move.obj
          Debug\Pawns2.0.obj
          Debug\Piece.obj
+         Debug\Player.obj
          Debug\Square.obj
          Debug\stdafx.obj
-         Pawns2.0.vcxproj -> C:\Users\Matthew\documents\visual studio 2013\Projects\Pawns2.0\Debug\Pawns2.0.exe
-     1>Done Building Project "C:\Users\Matthew\documents\visual studio 2013\Projects\Pawns2.0\Pawns2.0\Pawns2.0.vcxproj" (Build target(s)).
+         Pawns2.0.vcxproj -> C:\Users\Matthew\Documents\GitHub\PawnsAI\Debug\Pawns2.0.exe
+     1>Done Building Project "C:\Users\Matthew\Documents\GitHub\PawnsAI\Pawns2.0\Pawns2.0.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:02.67
+Time Elapsed 00:00:01.24

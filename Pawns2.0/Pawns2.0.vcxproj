@@ -82,18 +82,21 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Board.h" />
-    <ClInclude Include="LinkedList.h" />
+    <ClInclude Include="GameController.h" />
     <ClInclude Include="Move.h" />
     <ClInclude Include="Piece.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="Square.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Board.cpp" />
+    <ClCompile Include="GameController.cpp" />
     <ClCompile Include="Move.cpp" />
     <ClCompile Include="Pawns2.0.cpp" />
     <ClCompile Include="Piece.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="Square.cpp" />
     <ClCompile Include="stdafx.cpp" />
   </ItemGroup>

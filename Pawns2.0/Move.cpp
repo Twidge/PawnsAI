@@ -2,17 +2,17 @@
 
 // CONSTRUCTORS
 
-Move::Move(const Square& squareFrom, const Square& squareTo, bool whiteMove)
+Move::Move(Square const& squareFrom, Square const& squareTo, bool whiteMove)
 {
-	from = squareFrom;
-	to = squareTo;
-	isWhite = whiteMove;
+	m_from = squareFrom;
+	m_to = squareTo;
+	m_isWhite = whiteMove;
 
-	for (int i = 0; i < 8; i++)
+	for (int l_firstIndex = 0; l_firstIndex < G_BOARD_SIZE; l_firstIndex++)
 	{
-		for (int j = 0; j < 8; j++)
+		for (int l_secondIndex = 0; l_secondIndex < G_BOARD_SIZE; l_secondIndex++)
 		{
-			coefficients[i][j] = 0;
+			m_coefficients[l_firstIndex][l_secondIndex] = 0;
 		}
 	}
 }
@@ -21,42 +21,36 @@ Move::Move()
 {
 }
 
-Move::Move(const Move& foo)
+Move::Move(const Move& move)
 {
-	from = foo.from;
-	to = foo.to;
-	isWhite = foo.isWhite;
+	m_from = move.m_from;
+	m_to = move.m_to;
+	m_isWhite = move.m_isWhite;
 
 	// Can probably just do coefficients = foo.coefficients
 
-	for (int i = 0; i < 8; i++)
+	for (int l_firstIndex = 0; l_firstIndex < G_BOARD_SIZE; l_firstIndex++)
 	{
-		for (int j = 0; j < 8; j++)
+		for (int l_secondIndex = 0; l_secondIndex < G_BOARD_SIZE; l_secondIndex++)
 		{
-			coefficients[i][j] = foo.coefficients[i][j];
+			m_coefficients[l_firstIndex][l_secondIndex] = move.m_coefficients[l_firstIndex][l_secondIndex];
 		}
 	}
 }
 
-// DESTRUCTOR
-
-Move::~Move()
-{
-}
-
 // ASSIGNMENT OPERATOR
 
-const Move& Move::operator=(const Move& foo)
+const Move& Move::operator=(const Move& move)
 {
-	from = foo.from;
-	to = foo.to;
-	isWhite = foo.isWhite;
+	m_from = move.m_from;
+	m_to = move.m_to;
+	m_isWhite = move.m_isWhite;
 
-	for (int i = 0; i < 8; i++)
+	for (int l_firstIndex = 0; l_firstIndex < G_BOARD_SIZE; l_firstIndex++)
 	{
-		for (int j = 0; j < 8; j++)
+		for (int l_secondIndex = 0; l_secondIndex < G_BOARD_SIZE; l_secondIndex++)
 		{
-			coefficients[i][j] = foo.coefficients[i][j];
+			m_coefficients[l_firstIndex][l_secondIndex] = move.m_coefficients[l_firstIndex][l_secondIndex];
 		}
 	}
 
@@ -101,27 +95,27 @@ ostream& operator<< (ostream& os, const Move& move)
 
 const Square& Move::GetFrom() const
 {
-	return from;
+	return m_from;
 }
 
 const Square& Move::GetTo() const
 {
-	return to;
+	return m_to;
 }
 
 bool Move::IsWhite() const
 {
-	return isWhite;
+	return m_isWhite;
 }
 
 double Move::GetCoefficient(int x, int y) const
 {
-	return coefficients[x][y];
+	return m_coefficients[x][y];
 }
 
 // SETTERS
 
 void Move::AddToCoefficient(int x, int y, double z)
 {
-	coefficients[x][y] += z;
+	m_coefficients[x][y] += z;
 }
