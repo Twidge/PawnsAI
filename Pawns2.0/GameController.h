@@ -1,3 +1,6 @@
+#ifndef GAMECONTROLLER_H
+#define GAMECONTROLLER_H
+
 class Board;
 class Player;
 
@@ -27,3 +30,5 @@ public :
 
 	void operator= (GameController const&);
 };
+
+#endif

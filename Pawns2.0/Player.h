@@ -1,3 +1,6 @@
+#ifndef PLAYER_H
+#define PLAYER_H
+
 #include <vector>
 
 class Board;
@@ -52,3 +55,5 @@ public :
 private :
 
 };
+
+#endif
