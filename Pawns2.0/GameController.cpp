@@ -74,6 +74,7 @@ void GameController::WriteOutCoefficients()
 
 void GameController::operator= (GameController const& controller)
 {
+	delete m_gameBoard;
 	m_gameBoard = new Board();
 	*m_gameBoard = *(controller.m_gameBoard);
 }

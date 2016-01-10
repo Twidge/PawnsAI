@@ -750,9 +750,11 @@ const Board& Board::operator= (const Board& board)
 
 	m_materialFactor = board.m_materialFactor;
 
+	delete m_allMoves;
 	m_allMoves = new std::vector<Move>();
 	m_allMoves = board.m_allMoves;
 
+	delete m_gameSoFar;
 	m_gameSoFar = new std::vector<Move>();
 	m_gameSoFar = board.m_gameSoFar;
 
